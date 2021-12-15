@@ -167,6 +167,10 @@ class Configuration:
             y=self.event.rel[1]
             t=math.atan2(y,x)
             gl.glRotate(t, 1, 0, 1)
+        elif pygame.mouse.get_pressed()[2]==1:
+            x=self.event.rel[0]
+            y=self.event.rel[1]
+            gl.glTranslatef(0.01*x,0,0.01*y)
             
          
     # Displays on screen and processes events    
