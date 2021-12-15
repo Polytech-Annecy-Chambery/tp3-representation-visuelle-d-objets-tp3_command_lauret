@@ -44,13 +44,13 @@ def Q3a():
 
 def Q4a():
     # Ecriture en utilisant des variables : A compléter
-    wall1 = Wall({'position': [0, 0, 0], 'width':5, 'height':5})
-    wall2 = Wall({'position': [0, 5, 0], 'width':-5, 'height':5})
-    wall3 = Wall({'position': [5, 0, 0], 'width':5, 'height':5})
-    wall4 = Wall({'position': [5, 5, 0], 'width':-5, 'height':5})  
-    house = House({'position': [0, 0, 0], 'orientation':0})
+    wall1 = Wall({'position': [0, 0, 0], 'width':5, 'height':2.6, 'edges': True, 'orientation':0})
+    wall2 = Wall({'position': [5, 0, 0], 'width':5, 'height':2.6, 'edges': True,'orientation':90})
+    wall3 = Wall({'position': [0, 0, 0], 'width':5, 'height':2.6, 'edges': True,'orientation':90})
+    wall4 = Wall({'position': [0, 5, 0], 'width':5, 'height':2.6, 'edges': True,'orientation':0})  
+    house = House({'position': [-3, 1, 0], 'orientation':0})
     house.add(wall1).add(wall3).add(wall4).add(wall2)
-    return Configuration().add(house)   
+    return Configuration().add(house)    
     
 def Q5a():  
     # Ecriture avec mélange de variable et de chaînage    
